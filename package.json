@@ -22,8 +22,7 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/vue-monaco-next.js",
-      "require": "./dist/vue-monaco-next.js"
+      "import": "./dist/vue-monaco-next.js"
     }
   },
   "main": "./dist/vue-monaco-next.js",

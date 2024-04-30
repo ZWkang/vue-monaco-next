@@ -10,6 +10,7 @@ export default defineConfig({
       entry: 'src/editor.vue',
       name: 'vue-monaco-next',
       fileName: 'vue-monaco-next',
+      formats: ['es'],
     },
     rollupOptions: {
       external: ['vue', '@vueuse/core', 'monaco-editor'],
