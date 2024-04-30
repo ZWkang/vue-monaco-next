@@ -1,7 +1,7 @@
 {
   "name": "vue-monaco-next",
   "type": "module",
-  "version": "0.0.1-beta.15",
+  "version": "0.0.1-beta.16",
   "packageManager": "pnpm@8.15.8",
   "description": "a simple monaco editor component for vue3",
   "publishConfig": {
