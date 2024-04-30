@@ -37,6 +37,10 @@ const code = ref('const a = 1')
 </template>
 ```
 
+## example
+
+[example](./example)
+
 ## LICENSE
 
 [MIT](./LICENSE) License © 2022 [zwkang](https://github.com/zwkang)
