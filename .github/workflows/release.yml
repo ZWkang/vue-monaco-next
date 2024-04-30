@@ -5,10 +5,6 @@ on:
     tags:
       - 'v*'
 
-permissions:
-  contents: write
-  id-token: write
-
 jobs:
   release:
     name: changelog-github
