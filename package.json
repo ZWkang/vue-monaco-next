@@ -12,10 +12,7 @@
     "email": "kang95630@gmail.com"
   },
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zwkang/vue-monaco-next"
-  },
+  "repository": "https://github.com/zwkang/vue-monaco-next",
   "bugs": "https://github.com/zwkang/vue-monaco-next/issues",
   "keywords": [],
   "sideEffects": false,
