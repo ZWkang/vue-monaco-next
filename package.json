@@ -14,9 +14,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zwkang/pkg-name.git"
+    "url": "git+https://github.com/zwkang/vue-monaco-next.git"
   },
-  "bugs": "https://github.com/zwkang/pkg-name/issues",
+  "bugs": "https://github.com/zwkang/vue-monaco-next/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
