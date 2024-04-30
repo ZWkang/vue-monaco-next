@@ -1,9 +1,9 @@
 {
-  "name": "pkg-name",
+  "name": "vue-monaco-next",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@8.15.8",
-  "description": "> description:",
+  "description": "a simple monaco editor component for vue3",
   "publishConfig": {
     "access": "public"
   },

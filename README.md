@@ -14,6 +14,16 @@ yarn add vue-monaco-next
 npm install vue-monaco-next
 ```
 
+```typescript
+import { createApp } from 'vue'
+import App from './App.vue'
+import MonacoEditor from 'vue-monaco-next'
+
+createApp(App)
+  .component('monaco-editor', MonacoEditor)
+  .mount('#app')
+```
+
 ```vue
 <script setup>
 import { ref } from 'vue'
