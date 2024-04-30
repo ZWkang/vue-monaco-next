@@ -1,28 +1,31 @@
-# pkg-name
+# vue-monaco-next
 
-> description:
+api is currently unstable, please do not use it in production immediately as there may be breaking changes.
 
-## Features
-
-- tsup The simplest and fastest way to bundle your TypeScript libraries.
-- pnpm awesome package manager
-- Eslint + Prettier good format and format checker
-- TypeScript, of course!!
+a simple vue3 monaco editor component
 
 ## Try it now
 
-## copy usage remove this please !!
+```bash
+pnpm install vue-monaco-next
+# or
+yarn add vue-monaco-next
+# or
+npm install vue-monaco-next
+```
 
-a simple description
+```vue
+<script setup>
+import { ref } from 'vue'
+import MonacoEditor from 'vue-monaco-next'
 
-Inspired by
+const code = ref('const a = 1')
+</script>
 
-- [antfu/starter-ts](https://github.com/antfu/starter-ts)
-- [egoist/ts-lib-starter](https://github.com/egoist/ts-lib-starter)
-
-setup a default template to build your own tool, awesome !!
-
-find all pkg-name and replace them all!!
+<template>
+  <MonacoEditor v-model="code" />
+</template>
+```
 
 ## LICENSE
 

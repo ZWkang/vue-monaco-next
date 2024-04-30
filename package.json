@@ -1,16 +1,17 @@
 {
   "name": "pkg-name",
+  "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.15.7",
+  "packageManager": "pnpm@8.15.8",
   "description": "> description:",
   "publishConfig": {
     "access": "public"
   },
-  "type": "module",
   "author": {
     "name": "zwkang",
     "email": "kang95630@gmail.com"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zwkang/pkg-name.git"
@@ -21,12 +22,12 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "import": "./dist/vue-monaco-next.js",
+      "require": "./dist/vue-monaco-next.js"
     }
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/vue-monaco-next.js",
+  "module": "./dist/vue-monaco-next.js",
   "types": "./dist/index.d.ts",
   "typesVersions": {
     "*": {
@@ -41,9 +42,9 @@
   ],
   "scripts": {
     "dev": "tsup --watch",
-    "lint": "eslint --cache .",
+    "lint:fix": "eslint . --fix",
     "test": "vitest run",
-    "build": "tsup",
+    "build": "vite build",
     "start": "tsx src/index.ts",
     "release": "npm publish",
     "bump:version": "bumpp",
@@ -51,20 +52,22 @@
     "prepublishOnly": "npm run build",
     "update:deps": "taze major -lr"
   },
+  "peerDependencies": {
+    "@vueuse/core": ">=9.0.0",
+    "monaco-editor": ">=0.39.0",
+    "vue": ">=3.3.0"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.16.0",
+    "@vitejs/plugin-vue": "^5.0.4",
     "bumpp": "^9.4.1",
     "eslint": "^9.1.1",
     "taze": "^0.13.7",
     "tsup": "^8.0.2",
     "tsx": "^4.7.3",
     "typescript": "^5.4.5",
-    "vitest": "^1.5.2"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "@vueuse/core": "^10.9.0",
-    "monaco-editor": "^0.48.0",
-    "vue": "^3.4.26"
+    "vite": "^5.2.10",
+    "vite-plugin-dts": "^3.9.0",
+    "vitest": "^1.5.3"
   }
 }
